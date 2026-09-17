@@ -40,5 +40,40 @@ window.LESSONS = [
       { start: 213.8, end: 227.0, it: "Metto il dentifricio sullo spazzolino e poi, con lo spazzolino, mi lavo i denti.", ko: "칫솔에 치약을 묻히고 칫솔로 이를 닦아요." },
       { start: 226.8, end: 232.0, it: "Ok, mi lavo i denti, poi spengo la luce.", ko: "좋아요, 이를 닦고 불을 꺼요." }
     ]
+  },
+  {
+    id: "pizza-preferita",
+    order: 2,
+    title: "La mia pizza preferita",
+    topic: "음식과 가족 이야기",
+    level: "A1–A2",
+    creator: "Epic Italian Journey",
+    videoTitle: "LISTEN & LEARN ITALIAN – Short Story for Complete Beginners (A1-A2)",
+    videoId: "ZeYNmb4qHps",
+    sourceUrl: "https://www.youtube.com/watch?v=ZeYNmb4qHps",
+    durationLabel: "약 2분",
+    rangeLabel: "선택 구간 00:28–02:31",
+    sentences: [
+      { start: 28.0, end: 34.0, it: "Ciao, mi chiamo Luca e oggi voglio raccontarti della mia pizza preferita.", ko: "안녕하세요, 저는 루카이고 오늘 제가 가장 좋아하는 피자에 관해 이야기해 드릴게요." },
+      { start: 34.0, end: 44.0, it: "Ogni venerdì sera, la mia famiglia ed io ordiniamo la pizza da una pizzeria vicino a casa nostra.", ko: "매주 금요일 저녁, 우리 가족과 저는 집 근처 피자 가게에서 피자를 주문해요." },
+      { start: 44.0, end: 48.0, it: "La pizzeria si chiama Da Mario.", ko: "그 피자 가게의 이름은 ‘다 마리오’예요." },
+      { start: 48.0, end: 55.0, it: "Mario, il pizzaiolo, fa le pizze più buone.", ko: "피자 요리사 마리오는 가장 맛있는 피자를 만들어요." },
+      { start: 55.0, end: 60.0, it: "Io scelgo sempre la pizza margherita.", ko: "저는 항상 마르게리타 피자를 골라요." },
+      { start: 60.0, end: 65.0, it: "La conosci? È una pizza semplice ma molto famosa.", ko: "알고 있나요? 단순하지만 아주 유명한 피자예요." },
+      { start: 65.0, end: 73.0, it: "Gli ingredienti sono pomodoro, mozzarella e basilico.", ko: "재료는 토마토, 모차렐라 그리고 바질이에요." },
+      { start: 73.0, end: 80.0, it: "Il basilico ha un buon profumo e la mozzarella si scioglie sul pomodoro.", ko: "바질은 향이 좋고 모차렐라는 토마토 위에서 녹아요." },
+      { start: 80.0, end: 86.0, it: "Quando la mangio, mi sembra di essere in Italia.", ko: "그 피자를 먹으면 이탈리아에 있는 것처럼 느껴져요." },
+      { start: 86.0, end: 91.0, it: "Mia sorella non ama la pizza margherita.", ko: "제 여동생은 마르게리타 피자를 좋아하지 않아요." },
+      { start: 91.0, end: 97.0, it: "Lei preferisce la pizza quattro formaggi perché ama il formaggio.", ko: "여동생은 치즈를 좋아해서 콰트로 포르마지 피자를 더 좋아해요." },
+      { start: 97.0, end: 103.0, it: "La sua pizza ha mozzarella, gorgonzola, parmigiano e provolone.", ko: "그 피자에는 모차렐라, 고르곤졸라, 파르미자노와 프로볼로네가 들어가요." },
+      { start: 103.0, end: 107.0, it: "È molto saporita e cremosa.", ko: "아주 풍미가 좋고 부드러워요." },
+      { start: 107.0, end: 116.0, it: "A volte mi dà un pezzetto, ma preferisco sempre la mia margherita.", ko: "가끔 제게 한 조각을 주지만, 저는 언제나 제 마르게리타를 더 좋아해요." },
+      { start: 116.0, end: 120.0, it: "A mia mamma piace la pizza vegetariana.", ko: "엄마는 채소 피자를 좋아하세요." },
+      { start: 120.0, end: 128.0, it: "Ha molte verdure come zucchine, melanzane, peperoni e pomodori.", ko: "거기에는 주키니, 가지, 피망, 토마토 같은 채소가 많이 들어가요." },
+      { start: 128.0, end: 133.0, it: "Dice che è leggera e salutare.", ko: "엄마는 그 피자가 가볍고 건강에 좋다고 말하세요." },
+      { start: 133.0, end: 139.0, it: "Dopo aver mangiato la pizza, parliamo e ridiamo.", ko: "피자를 먹은 뒤 우리는 이야기하고 웃어요." },
+      { start: 139.0, end: 143.0, it: "A volte guardiamo un film o giochiamo a carte.", ko: "가끔 영화를 보거나 카드놀이를 해요." },
+      { start: 143.0, end: 151.0, it: "È una serata speciale con la mia famiglia.", ko: "가족과 함께하는 특별한 저녁이에요." }
+    ]
   }
 ];
