@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="유튜브 영상으로 연습하는 이탈리아어 문장 반복 학습 라이브러리">
+  <meta name="theme-color" content="#13203c">
+  <title>Italiano Replay</title>
+  <link rel="preconnect" href="https://www.youtube.com">
+  <link rel="preconnect" href="https://i.ytimg.com">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2313203c'/%3E%3Cpath d='M21 18v28M21 32h22' stroke='%23fff' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='43' cy='32' r='6' fill='%23ff6b55'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Italiano Replay 홈">
+      <span class="brand-mark">↻</span>
+      <span>Italiano Replay</span>
+    </a>
+    <button class="home-button" id="home-button" type="button" hidden>← 영상 목록</button>
+  </header>
+
+  <main id="library-view" class="library-view">
+    <section class="library-intro">
+      <p class="eyebrow">LA TUA BIBLIOTECA</p>
+      <h1>영상으로 익히는<br><span>진짜 이탈리아어</span></h1>
+      <p class="intro-copy">짧은 문장을 골라 듣고, 필요한 만큼 반복하세요.</p>
+      <div class="library-count" id="library-count"></div>
+    </section>
+
+    <section class="lesson-library" aria-labelledby="library-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">LE LEZIONI</p>
+          <h2 id="library-title">학습 영상</h2>
+        </div>
+      </div>
+      <div class="lesson-grid" id="lesson-grid"></div>
+    </section>
+  </main>
+
+  <main id="lesson-view" class="lesson-view" hidden>
+    <section class="player-panel" aria-label="영상 학습 플레이어">
+      <div class="lesson-meta-row">
+        <span class="level" id="lesson-level"></span>
+        <span class="lesson-number" id="lesson-number"></span>
+      </div>
+
+      <div class="title-block">
+        <h1 id="lesson-title"></h1>
+        <p id="lesson-source-line"></p>
+      </div>
+
+      <div class="video-shell">
+        <div id="player"></div>
+        <div class="player-message" id="player-message" hidden>영상을 불러오지 못했습니다. 잠시 후 다시 시도해주세요.</div>
+      </div>
+
+      <div class="now-card" aria-live="polite">
+        <div class="now-label">NOW PLAYING</div>
+        <div class="now-it idle" id="now-it">문장을 눌러 시작하세요.</div>
+        <div class="now-ko" id="now-ko"></div>
+      </div>
+
+      <div class="controls" aria-label="학습 설정">
+        <button class="control" id="repeat-btn" type="button" aria-pressed="false">↻ 반복 꺼짐</button>
+        <button class="control speed" id="speed-btn" type="button" aria-pressed="false">속도 1×</button>
+        <button class="control" id="translation-btn" type="button" aria-pressed="false">번역 가리기</button>
+        <button class="control" id="italian-btn" type="button" aria-pressed="false">이탈리아어 가리기</button>
+      </div>
+    </section>
+
+    <section class="sentence-panel" aria-labelledby="sentence-heading">
+      <header class="sentence-head">
+        <div>
+          <p class="eyebrow">ASCOLTA E RIPETI</p>
+          <h2 id="sentence-heading"></h2>
+          <p>문장을 누르면 해당 구간만 재생됩니다.</p>
+        </div>
+        <span class="duration" id="lesson-duration"></span>
+      </header>
+
+      <div class="sentences" id="sentences"></div>
+
+      <p class="source-note" id="source-note"></p>
+    </section>
+  </main>
+
+  <template id="lesson-card-template">
+    <article class="lesson-card">
+      <button class="card-link" type="button">
+        <span class="thumbnail-wrap">
+          <img class="thumbnail" alt="" loading="lazy">
+          <span class="play-badge" aria-hidden="true">▶</span>
+          <span class="card-duration"></span>
+        </span>
+        <span class="card-body">
+          <span class="card-topline">
+            <span class="card-level"></span>
+            <span class="card-sentence-count"></span>
+          </span>
+          <strong class="card-title"></strong>
+          <span class="card-topic"></span>
+        </span>
+      </button>
+    </article>
+  </template>
+
+  <script src="lessons.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
