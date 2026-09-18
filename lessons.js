@@ -75,5 +75,40 @@ window.LESSONS = [
       { start: 139.0, end: 143.0, it: "A volte guardiamo un film o giochiamo a carte.", ko: "가끔 영화를 보거나 카드놀이를 해요." },
       { start: 143.0, end: 151.0, it: "È una serata speciale con la mia famiglia.", ko: "가족과 함께하는 특별한 저녁이에요." }
     ]
+  },
+  {
+    id: "presentarsi-in-italiano",
+    order: 3,
+    title: "Presentarsi in italiano",
+    topic: "자기소개와 일상 질문",
+    level: "A0–A1",
+    creator: "Easy Italian",
+    videoTitle: "Introduce Yourself in Italian (for absolute beginners) | Super Easy Italian 48",
+    videoId: "ieyLUxtwch4",
+    sourceUrl: "https://www.youtube.com/watch?v=ieyLUxtwch4",
+    durationLabel: "약 1분",
+    rangeLabel: "선택 구간 00:35–04:31",
+    sentences: [
+      { start: 35.6, end: 37.9, it: "Come ti chiami?", ko: "이름이 뭐예요?" },
+      { start: 40.6, end: 42.5, it: "Sono Elena, piacere.", ko: "저는 엘레나예요. 반가워요." },
+      { start: 44.6, end: 46.3, it: "Mi chiamo Ludovica.", ko: "제 이름은 루도비카예요." },
+      { start: 62.6, end: 64.7, it: "Dove abiti?", ko: "어디에 살아요?" },
+      { start: 65.5, end: 67.3, it: "Abito a Milano.", ko: "밀라노에 살아요." },
+      { start: 73.7, end: 77.4, it: "Di dove sei?", ko: "어디 출신이에요?" },
+      { start: 77.5, end: 78.9, it: "Vengo da Venezia.", ko: "베네치아에서 왔어요." },
+      { start: 79.9, end: 81.3, it: "Sono inglese.", ko: "저는 영국인이에요." },
+      { start: 84.8, end: 85.9, it: "Sono di Roma.", ko: "저는 로마 출신이에요." },
+      { start: 94.4, end: 99.9, it: "Io sono nativa di Trento, ma vivo a Milano da tantissimi anni.", ko: "저는 트렌토 태생이지만 아주 오랫동안 밀라노에서 살고 있어요." },
+      { start: 206.3, end: 208.3, it: "Che lavoro fai?", ko: "무슨 일을 해요?" },
+      { start: 211.7, end: 213.7, it: "Lavoro per una compagnia aerea.", ko: "항공사에서 일해요." },
+      { start: 213.6, end: 215.7, it: "Faccio la studentessa.", ko: "저는 학생이에요." },
+      { start: 215.6, end: 216.6, it: "Cosa studi?", ko: "무엇을 공부해요?" },
+      { start: 216.5, end: 218.8, it: "Studio ingegneria informatica.", ko: "컴퓨터공학을 공부해요." },
+      { start: 251.7, end: 254.6, it: "Cosa fai nel tempo libero?", ko: "여가 시간에는 무엇을 해요?" },
+      { start: 254.5, end: 258.8, it: "Nel tempo libero pratico sport e mi riposo.", ko: "여가 시간에는 운동을 하고 쉬어요." },
+      { start: 260.8, end: 262.9, it: "Mi piace guardare film.", ko: "영화 보는 것을 좋아해요." },
+      { start: 264.1, end: 267.1, it: "Mi piace fare le passeggiate.", ko: "산책하는 것을 좋아해요." },
+      { start: 267.0, end: 271.4, it: "Mi piace ascoltare la musica e andare in palestra.", ko: "음악을 듣고 헬스장에 가는 것을 좋아해요." }
+    ]
   }
 ];
