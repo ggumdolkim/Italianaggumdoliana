@@ -110,5 +110,40 @@ window.LESSONS = [
       { start: 264.1, end: 267.1, it: "Mi piace fare le passeggiate.", ko: "산책하는 것을 좋아해요." },
       { start: 267.0, end: 271.4, it: "Mi piace ascoltare la musica e andare in palestra.", ko: "음악을 듣고 헬스장에 가는 것을 좋아해요." }
     ]
+  },
+  {
+    id: "colazione-al-bar",
+    order: 4,
+    title: "Colazione al bar",
+    topic: "카페 주문과 선택 표현",
+    level: "A1",
+    creator: "Easy Italian",
+    videoTitle: "How to Order Breakfast in Italy Like a Local | Easy Italian 261",
+    videoId: "Q28_M_fBUT0",
+    sourceUrl: "https://www.youtube.com/watch?v=Q28_M_fBUT0",
+    durationLabel: "약 1분",
+    rangeLabel: "선택 구간 00:52–15:39",
+    sentences: [
+      { start: 51.8, end: 54.4, it: "Ragazzi, voi vi accomodate?", ko: "여러분, 자리에 앉으실 건가요?" },
+      { start: 54.2, end: 56.3, it: "Sì, magari fuori.", ko: "네, 가능하면 밖에요." },
+      { start: 55.3, end: 61.2, it: "Allora, prendiamo un cappuccino, un caffè macchiato e un caffè normale.", ko: "그럼 카푸치노 하나, 마키아토 하나, 일반 커피 하나로 할게요." },
+      { start: 62.4, end: 64.7, it: "Che brioche vuoi?", ko: "어떤 브리오슈를 원해?" },
+      { start: 64.8, end: 68.5, it: "Prendiamo anche una brioche vuota per me.", ko: "저를 위해 속이 없는 브리오슈도 하나 주문할게요." },
+      { start: 72.5, end: 74.8, it: "Ecco qua, grazie.", ko: "여기 있습니다. 감사합니다." },
+      { start: 420.7, end: 427.5, it: "Buongiorno. Un caffè macchiato decaffeinato, per favore.", ko: "안녕하세요. 디카페인 마키아토 한 잔 부탁드려요." },
+      { start: 428.5, end: 432.2, it: "Hai qualcosa di piccolino?", ko: "작은 것으로 뭐가 있나요?" },
+      { start: 436.7, end: 439.0, it: "Tu vuoi qualcosa?", ko: "너도 뭐 먹을래?" },
+      { start: 439.0, end: 444.4, it: "Una sfogliatella con la cioccolata o la crema. Cosa preferisci?", ko: "초콜릿이나 크림이 든 스폴리아텔라가 있어. 어떤 게 좋아?" },
+      { start: 569.4, end: 573.7, it: "Ciao, scusa, posso chiederti com'è questo?", ko: "안녕하세요, 실례지만 이것이 어떤 건지 물어봐도 될까요?" },
+      { start: 573.1, end: 579.0, it: "Volevamo una brioche salata con prosciutto cotto e brie.", ko: "익힌 햄과 브리 치즈가 든 짭짤한 브리오슈 하나 주세요." },
+      { start: 585.0, end: 591.4, it: "Poi volevamo due spremute d'arancia.", ko: "그리고 생오렌지주스 두 잔 주세요." },
+      { start: 591.4, end: 594.0, it: "E tu, Antonella, cosa prendi?", ko: "안토넬라, 너는 무엇을 주문할래?" },
+      { start: 593.0, end: 596.4, it: "Un tè e un caffè decaffeinato.", ko: "차 한 잔과 디카페인 커피 한 잔이요." },
+      { start: 730.3, end: 732.3, it: "Vuoi assaggiare un po'?", ko: "조금 맛볼래?" },
+      { start: 731.9, end: 733.8, it: "No, grazie.", ko: "아니요, 괜찮아요." },
+      { start: 783.5, end: 789.3, it: "Buongiorno, per favore, posso avere un cappuccino e una brioche?", ko: "안녕하세요. 카푸치노 한 잔과 브리오슈 하나 주시겠어요?" },
+      { start: 847.5, end: 852.5, it: "Avete una bustina di zucchero di canna?", ko: "갈색 설탕 한 봉지가 있나요?" },
+      { start: 933.5, end: 939.5, it: "Scusi, ma cosa c'è dentro questa brioche?", ko: "실례합니다. 이 브리오슈 안에는 무엇이 들어 있나요?" }
+    ]
   }
 ];
