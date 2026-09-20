@@ -145,5 +145,40 @@ window.LESSONS = [
       { start: 847.5, end: 852.5, it: "Avete una bustina di zucchero di canna?", ko: "갈색 설탕 한 봉지가 있나요?" },
       { start: 933.5, end: 939.5, it: "Scusi, ma cosa c'è dentro questa brioche?", ko: "실례합니다. 이 브리오슈 안에는 무엇이 들어 있나요?" }
     ]
+  },
+  {
+    id: "che-programmi-hai",
+    order: 5,
+    title: "Che programmi hai?",
+    topic: "오늘·어제·내일의 계획",
+    level: "A1–A2",
+    creator: "Easy Italian",
+    videoTitle: "Milan, What Are You Doing Today? | Easy Italian 221",
+    videoId: "DWsmdW6NVew",
+    sourceUrl: "https://www.youtube.com/watch?v=DWsmdW6NVew",
+    durationLabel: "약 1분",
+    rangeLabel: "선택 구간 00:13–08:41",
+    sentences: [
+      { start: 12.6, end: 16.1, it: "Che programmi hai per oggi?", ko: "오늘 무슨 계획이 있어요?" },
+      { start: 15.6, end: 20.5, it: "Oggi voglio andare alla Rinascente.", ko: "오늘 리나센테에 가고 싶어요." },
+      { start: 26.7, end: 32.2, it: "Vado a mangiare da Luini il panzerotto.", ko: "루이니에서 판체로토를 먹으러 가요." },
+      { start: 33.8, end: 39.2, it: "E poi vado a fare una passeggiata al Duomo.", ko: "그런 다음 두오모를 산책하러 가요." },
+      { start: 42.5, end: 49.6, it: "Mi trovo con i miei cari amici e parenti.", ko: "친한 친구들과 가족들을 만나요." },
+      { start: 51.5, end: 55.5, it: "È la prima volta che mangi i panzerotti di Luini?", ko: "루이니의 판체로티를 먹는 건 처음이에요?" },
+      { start: 55.0, end: 60.0, it: "No, non è la prima volta. Li mangiavo già da piccola.", ko: "아니요, 처음이 아니에요. 어릴 때부터 먹었어요." },
+      { start: 84.7, end: 89.5, it: "Oggi abbiamo fatto colazione in centro.", ko: "오늘 시내에서 아침을 먹었어요." },
+      { start: 88.4, end: 93.3, it: "Poi siamo andati a vedere la mostra di Munch.", ko: "그다음 뭉크 전시회를 보러 갔어요." },
+      { start: 92.8, end: 99.0, it: "Adesso faremo una passeggiata, un pranzetto e poi un altro giretto in centro.", ko: "이제 산책하고 간단히 점심을 먹은 뒤 시내를 한 바퀴 더 돌 거예요." },
+      { start: 98.0, end: 100.6, it: "Com'era la mostra di Munch?", ko: "뭉크 전시는 어땠어요?" },
+      { start: 100.4, end: 103.0, it: "Molto bella, la consiglio.", ko: "정말 좋았어요. 추천해요." },
+      { start: 106.8, end: 110.2, it: "Siamo andati a fare un po' di shopping.", ko: "쇼핑을 좀 했어요." },
+      { start: 109.3, end: 116.3, it: "Adesso andiamo a casa, pranziamo e ci riposiamo un attimo.", ko: "이제 집에 가서 점심을 먹고 잠깐 쉴 거예요." },
+      { start: 115.0, end: 118.3, it: "E poi stasera usciamo.", ko: "그리고 오늘 저녁에는 나갈 거예요." },
+      { start: 124.8, end: 129.0, it: "Veniamo qua e facciamo l'aperitivo.", ko: "여기에 와서 아페리티보를 해요." },
+      { start: 193.5, end: 198.0, it: "E tu, che hai fatto ieri?", ko: "그럼 당신은 어제 무엇을 했어요?" },
+      { start: 371.0, end: 380.7, it: "Ieri ho studiato l'inglese perché voglio fare un esame.", ko: "어제는 영어 시험을 보려고 영어 공부를 했어요." },
+      { start: 468.7, end: 473.5, it: "Cosa farai domani?", ko: "내일은 무엇을 할 거예요?" },
+      { start: 517.0, end: 521.5, it: "Domani mi sveglierò tardi, probabilmente.", ko: "아마 내일은 늦게 일어날 거예요." }
+    ]
   }
 ];
