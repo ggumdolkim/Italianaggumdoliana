@@ -180,5 +180,40 @@ window.LESSONS = [
       { start: 468.7, end: 473.5, it: "Cosa farai domani?", ko: "내일은 무엇을 할 거예요?" },
       { start: 517.0, end: 521.5, it: "Domani mi sveglierò tardi, probabilmente.", ko: "아마 내일은 늦게 일어날 거예요." }
     ]
+  },
+  {
+    id: "serate-in-famiglia",
+    order: 6,
+    title: "Le serate di una volta",
+    topic: "가족·친구와 보내던 시간",
+    level: "A1–A2",
+    creator: "Italiano Automatico",
+    videoTitle: "30 Domande Per Nonna Elide",
+    videoId: "t2zmZa3K6hQ",
+    sourceUrl: "https://www.youtube.com/watch?v=t2zmZa3K6hQ",
+    durationLabel: "약 2분",
+    rangeLabel: "선택 구간 16:10–18:10",
+    sentences: [
+      { start: 970.0, end: 972.0, it: "Di volersi bene.", ko: "서로 아끼는 것이요." },
+      { start: 972.0, end: 975.0, it: "Di volersi bene un pochino.", ko: "서로 조금 더 아껴 주는 것이요." },
+      { start: 976.0, end: 980.0, it: "Ci riunivamo tutti seduti per terra.", ko: "우리는 모두 바닥에 앉아 모이곤 했어요." },
+      { start: 980.0, end: 982.5, it: "Raccontavamo barzellette, giocavamo.", ko: "우스갯소리를 하고 놀곤 했어요." },
+      { start: 982.0, end: 985.5, it: "Oggi non si vivono più quelle cose lì.", ko: "요즘은 그런 일을 더 이상 경험하지 않죠." },
+      { start: 986.0, end: 988.5, it: "Invece noi eravamo tutti felici.", ko: "하지만 우리는 모두 행복했어요." },
+      { start: 988.0, end: 991.5, it: "Tutti seduti assieme, cantavamo, mangiavamo.", ko: "다 같이 앉아서 노래하고 먹었어요." },
+      { start: 1004.0, end: 1007.5, it: "Si trovano insieme.", ko: "다 함께 모여요." },
+      { start: 1008.0, end: 1012.5, it: "Parlano insieme, pregano insieme, giocano insieme.", ko: "함께 이야기하고, 기도하고, 놀아요." },
+      { start: 1037.0, end: 1040.5, it: "Leggere un pochino.", ko: "조금 책을 읽는 것이요." },
+      { start: 1040.0, end: 1043.5, it: "Se avevo qualche libro, lo leggevo.", ko: "책이 있으면 읽곤 했어요." },
+      { start: 1046.0, end: 1049.5, it: "Noi la sera eravamo sempre in tante.", ko: "우리는 저녁이면 늘 여럿이 함께 있었어요." },
+      { start: 1049.0, end: 1054.5, it: "Una canzoncina, un ricordo... Cosa hai mangiato oggi?", ko: "짧은 노래나 추억 이야기, ‘오늘 뭐 먹었어?’ 같은 이야기를 했죠." },
+      { start: 1054.0, end: 1058.5, it: "Cantavamo tutte assieme sedute per terra.", ko: "모두 바닥에 앉아 함께 노래했어요." },
+      { start: 1059.0, end: 1063.5, it: "Per noi la gioia più bella era riunirci tutte la sera.", ko: "우리에게 가장 큰 기쁨은 저녁에 모두 모이는 것이었어요." },
+      { start: 1072.0, end: 1074.5, it: "E d'inverno, come facevate?", ko: "그럼 겨울에는 어떻게 지냈어요?" },
+      { start: 1074.0, end: 1078.5, it: "D'inverno giocavamo a tombola.", ko: "겨울에는 톰볼라 놀이를 하곤 했어요." },
+      { start: 1078.0, end: 1080.5, it: "Ci riunivamo nelle case.", ko: "집에 모이곤 했어요." },
+      { start: 1080.0, end: 1082.5, it: "Giocavate in casa a tombola?", ko: "집에서 톰볼라 놀이를 했어요?" },
+      { start: 1084.0, end: 1090.5, it: "Andavamo a casa di una vicina.", ko: "이웃집에 가곤 했어요." }
+    ]
   }
 ];
