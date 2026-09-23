@@ -215,5 +215,40 @@ window.LESSONS = [
       { start: 1080.0, end: 1082.5, it: "Giocavate in casa a tombola?", ko: "집에서 톰볼라 놀이를 했어요?" },
       { start: 1084.0, end: 1090.5, it: "Andavamo a casa di una vicina.", ko: "이웃집에 가곤 했어요." }
     ]
+  },
+  {
+    id: "alla-stazione",
+    order: 7,
+    title: "Alla stazione",
+    topic: "기차역과 대중교통",
+    level: "A1–A2",
+    creator: "Studio Italiano InClasse",
+    videoTitle: "Impariamo l'Italiano alla Stazione | Italian Daily Life",
+    videoId: "nMW5y7dv5uc",
+    sourceUrl: "https://www.youtube.com/watch?v=nMW5y7dv5uc",
+    durationLabel: "약 2분",
+    rangeLabel: "선택 구간 00:38–12:53",
+    sentences: [
+      { start: 38.0, end: 44.5, it: "Mi dai tre biglietti dell'autobus, per favore?", ko: "버스표 세 장 주시겠어요?" },
+      { start: 64.0, end: 69.5, it: "Siamo alla fermata dell'autobus.", ko: "우리는 버스 정류장에 있어요." },
+      { start: 70.0, end: 75.5, it: "Dobbiamo prendere il 61.", ko: "우리는 61번 버스를 타야 해요." },
+      { start: 93.0, end: 99.5, it: "Possiamo usare l'obliteratrice digitale.", ko: "디지털 개찰기를 사용할 수 있어요." },
+      { start: 99.0, end: 105.5, it: "Si mette il biglietto qui e si convalida il biglietto.", ko: "표를 여기에 넣어서 개찰합니다." },
+      { start: 162.0, end: 171.5, it: "Dovete controllare qual è il marciapiede giusto.", ko: "어느 승차 장소가 맞는지 확인해야 해요." },
+      { start: 318.0, end: 323.5, it: "Dove vogliamo andare?", ko: "우리 어디로 갈까요?" },
+      { start: 323.0, end: 330.5, it: "Posso selezionare il numero di passeggeri.", ko: "승객 수를 선택할 수 있어요." },
+      { start: 335.0, end: 343.5, it: "Qui ho gli orari dei treni per Venezia e le varie tariffe.", ko: "여기에 베네치아행 열차 시간과 여러 요금이 나와 있어요." },
+      { start: 343.0, end: 347.5, it: "È tutto esaurito.", ko: "전부 매진이에요." },
+      { start: 351.0, end: 357.5, it: "Proviamo con un'altra compagnia.", ko: "다른 철도 회사로 시도해 봅시다." },
+      { start: 384.0, end: 394.5, it: "Dobbiamo sempre guardare il tabellone degli orari.", ko: "항상 운행 시간 전광판을 확인해야 해요." },
+      { start: 394.0, end: 402.5, it: "A sinistra ci sono le partenze e a destra gli arrivi.", ko: "왼쪽에는 출발편, 오른쪽에는 도착편이 있어요." },
+      { start: 439.0, end: 447.5, it: "Posso prendere un regionale o un regionale veloce.", ko: "일반 지역 열차나 고속 지역 열차를 탈 수 있어요." },
+      { start: 484.0, end: 489.5, it: "Quando sentite questa voce, c'è un annuncio.", ko: "이 목소리가 들리면 안내 방송이 나오는 거예요." },
+      { start: 489.0, end: 495.5, it: "In questo periodo c'è purtroppo uno sciopero.", ko: "안타깝게도 지금은 파업 기간이에요." },
+      { start: 520.0, end: 524.5, it: "Adesso andiamo ai binari.", ko: "이제 승강장으로 갑시다." },
+      { start: 524.0, end: 531.5, it: "Il binario è il posto da dove parte il treno.", ko: "비나리오는 기차가 출발하는 승강장이에요." },
+      { start: 548.0, end: 555.5, it: "Potete sempre andare in biglietteria.", ko: "언제든 매표소에 가서 물어볼 수 있어요." },
+      { start: 764.0, end: 773.5, it: "Se il biglietto non è convalidato, prendete la multa.", ko: "표를 개찰하지 않으면 벌금을 물어요." }
+    ]
   }
 ];
