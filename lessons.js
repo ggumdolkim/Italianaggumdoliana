@@ -1,5 +1,6 @@
 // 새 영상을 추가할 때는 아래 LESSONS 배열에 같은 형식의 객체를 하나 더 넣으세요.
 // start와 end는 초 단위입니다. 예: 1분 23.5초 → 83.5
+// 반드시 실제 GitHub Pages 임베드 플레이어에서 외부 재생이 가능한지 확인한 영상만 추가하세요.
 window.LESSONS = [
   {
     id: "morning-routine",
@@ -284,76 +285,6 @@ window.LESSONS = [
       { start: 579.1, end: 581.4, it: "Questa costa trentanove euro.", ko: "이건 39유로예요." },
       { start: 581.4, end: 583.2, it: "Va bene. Pago con la carta.", ko: "좋아요. 카드로 결제할게요." },
       { start: 584.5, end: 587.0, it: "Ecco lo scontrino! Mi raccomando, lo conservi.", ko: "영수증 여기 있습니다! 꼭 보관하세요." }
-    ]
-  },
-  {
-    id: "una-giornata-a-scuola",
-    order: 9,
-    title: "Una giornata alla scuola d’italiano",
-    topic: "어학원·교실·친구와의 대화",
-    level: "A1–A2",
-    creator: "Learn Italian with Lucrezia",
-    videoTitle: "Vlog in Italian: una giornata alla scuola d'italiano Dilit",
-    videoId: "DC0wb7B1wCE",
-    sourceUrl: "https://www.youtube.com/watch?v=DC0wb7B1wCE",
-    durationLabel: "약 2분",
-    rangeLabel: "선택 구간 00:58–08:15",
-    sentences: [
-      { start: 58.0, end: 61.2, it: "Ciao Paola, come stai?", ko: "안녕 파올라, 잘 지내?" },
-      { start: 61.2, end: 65.1, it: "Tutto bene!", ko: "다 잘 지내!" },
-      { start: 65.1, end: 70.1, it: "Per qualsiasi cosa, sono qui al piano terra.", ko: "무슨 일이든 필요하면 저는 1층에 있어요." },
-      { start: 70.1, end: 74.6, it: "Ci vediamo dopo per un caffè?", ko: "이따 커피 마시러 만날까요?" },
-      { start: 74.6, end: 80.4, it: "Passa una bella giornata con noi.", ko: "우리와 함께 좋은 하루 보내요." },
-      { start: 80.4, end: 83.4, it: "Vieni con me, facciamo un giro.", ko: "나랑 같이 가요. 한 바퀴 둘러봅시다." },
-      { start: 83.4, end: 89.4, it: "Ci sono tante scale, quindi si rimane in forma.", ko: "계단이 많아서 운동이 돼요." },
-      { start: 89.4, end: 93.9, it: "Queste sono le aule.", ko: "여기가 교실들이에요." },
-      { start: 93.9, end: 101.6, it: "Molto spaziosa.", ko: "아주 넓네요." },
-      { start: 101.6, end: 108.7, it: "Tutte le classi hanno lo schermo oppure le lavagne interattive.", ko: "모든 교실에는 스크린이나 전자칠판이 있어요." },
-      { start: 108.8, end: 115.2, it: "Proseguiamo. C’è una meravigliosa terrazza.", ko: "계속 가 볼게요. 멋진 테라스가 있어요." },
-      { start: 169.7, end: 174.5, it: "Adesso devo andare in E2, al primo piano.", ko: "이제 2층에 있는 E2 교실로 가야 해요." },
-      { start: 177.8, end: 182.5, it: "Buongiorno. Posso?", ko: "안녕하세요. 들어가도 될까요?" },
-      { start: 302.4, end: 309.3, it: "Tra qualche minuto c’è una pausa.", ko: "몇 분 뒤에 쉬는 시간이 있어요." },
-      { start: 384.1, end: 390.8, it: "Come ti trovi qui?", ko: "여기 생활은 어때요?" },
-      { start: 384.1, end: 390.8, it: "Mi piace tantissimo, sono ritornata qui!", ko: "정말 좋아요. 그래서 여기 다시 왔어요!" },
-      { start: 426.5, end: 432.6, it: "Facciamo una passeggiata, una visita guidata, un aperitivo.", ko: "산책도 하고, 가이드 투어도 하고, 아페리티보도 해요." },
-      { start: 447.7, end: 454.4, it: "Fate lezione all’aperto oggi?", ko: "오늘은 야외에서 수업해요?" },
-      { start: 470.1, end: 472.9, it: "Le lezioni sono terminate.", ko: "수업이 끝났어요." },
-      { start: 487.5, end: 494.5, it: "Ti ringrazio tanto. Grazie mille a te.", ko: "정말 고마워요. 저야말로 정말 고마워요." }
-    ]
-  },
-  {
-    id: "dentro-una-casa-italiana",
-    order: 10,
-    title: "Dentro una casa italiana",
-    topic: "이탈리아 집과 생활 습관",
-    level: "A2",
-    creator: "Real Italian Conversations",
-    videoTitle: "Impara l'italiano in casa: gli oggetti di una casa italiana",
-    videoId: "wSEli9nuhR0",
-    sourceUrl: "https://www.youtube.com/watch?v=wSEli9nuhR0",
-    durationLabel: "약 2분",
-    rangeLabel: "선택 구간 04:56–09:33",
-    sentences: [
-      { start: 296.5, end: 300.8, it: "Un pavimento duro cambia anche il modo di pulire la casa.", ko: "단단한 바닥은 집을 청소하는 방식도 바꿔요." },
-      { start: 301.0, end: 304.5, it: "Sulla moquette si passa solo l’aspirapolvere.", ko: "카펫에는 진공청소기만 돌려요." },
-      { start: 304.7, end: 309.1, it: "Sulle piastrelle si passa prima la scopa e poi l’acqua.", ko: "타일 바닥은 먼저 빗자루로 쓸고 그다음 물걸레질해요." },
-      { start: 309.3, end: 314.5, it: "In ogni casa italiana ci sono un secchio e uno straccio.", ko: "이탈리아 집에는 어디에나 양동이와 대걸레가 있어요." },
-      { start: 314.6, end: 319.5, it: "Lo straccio è un panno grande e bagnato, attaccato a un bastone.", ko: "대걸레는 막대에 붙인 크고 젖은 천이에요." },
-      { start: 319.6, end: 324.8, it: "Nel secchio si mette acqua calda con un po’ di sapone per pavimenti.", ko: "양동이에는 따뜻한 물과 바닥용 세제를 조금 넣어요." },
-      { start: 325.0, end: 329.8, it: "Si lava una stanza per volta e si lascia asciugare il pavimento.", ko: "방을 하나씩 닦고 바닥을 말려요." },
-      { start: 330.0, end: 335.9, it: "Dal pavimento duro nasce anche un’altra abitudine: le pantofole.", ko: "단단한 바닥 때문에 생긴 또 다른 습관이 있어요. 바로 실내화예요." },
-      { start: 336.0, end: 341.3, it: "Le pantofole sono scarpe morbide che si usano solo dentro casa.", ko: "판토폴레는 집 안에서만 신는 부드러운 실내화예요." },
-      { start: 341.4, end: 346.1, it: "D’inverno il marmo e le piastrelle diventano molto freddi.", ko: "겨울에는 대리석과 타일이 아주 차가워져요." },
-      { start: 346.3, end: 352.0, it: "Le scarpe di fuori portano acqua e terra su un pavimento appena lavato.", ko: "외출용 신발은 막 닦은 바닥에 물과 흙을 묻혀요." },
-      { start: 352.2, end: 356.9, it: "Per questo molte famiglie lasciano le scarpe vicino alla porta.", ko: "그래서 많은 가정이 신발을 문 가까이에 벗어 둬요." },
-      { start: 431.1, end: 436.6, it: "Andiamo in bagno, perché lì c’è l’oggetto italiano più famoso di tutti.", ko: "욕실로 가 봅시다. 거기에 가장 유명한 이탈리아 물건이 있거든요." },
-      { start: 436.8, end: 441.2, it: "Accanto al water, in quasi ogni bagno, c’è il bidet.", ko: "거의 모든 욕실에는 변기 옆에 비데가 있어요." },
-      { start: 441.3, end: 447.9, it: "Il bidet è un oggetto di ceramica basso, con il rubinetto, che serve per lavarsi.", ko: "비데는 씻을 때 쓰는 수도꼭지가 달린 낮은 도기예요." },
-      { start: 448.0, end: 452.8, it: "Molti stranieri lo vedono per la prima volta proprio in Italia.", ko: "많은 외국인이 이탈리아에서 비데를 처음 봐요." },
-      { start: 538.6, end: 543.9, it: "In moltissime case italiane c’è una cassa di bottiglie d’acqua per terra.", ko: "아주 많은 이탈리아 집에는 생수 한 상자가 바닥에 놓여 있어요." },
-      { start: 549.2, end: 555.1, it: "Le famiglie comprano l’acqua al supermercato e la portano a casa ogni settimana.", ko: "가족들은 매주 슈퍼마켓에서 물을 사서 집으로 가져와요." },
-      { start: 555.2, end: 561.0, it: "Dal rubinetto esce acqua potabile, cioè acqua che si può bere.", ko: "수도꼭지에서는 마실 수 있는 물, 즉 식수가 나와요." },
-      { start: 566.4, end: 573.0, it: "È una questione di fiducia e di gusto.", ko: "그건 신뢰와 취향의 문제예요." }
     ]
   }
 ];
