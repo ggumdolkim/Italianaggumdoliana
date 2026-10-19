@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Italiano Replay · 영상 재생 확인</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f2eb;color:#243b31;font:16px/1.65 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:28px 18px 70px}a{color:#245c46}h1{font-size:clamp(25px,5vw,38px);line-height:1.3}p{max-width:760px}.muted{color:#657268}.panel{background:white;padding:20px;border:1px solid #d9dfd5;border-radius:16px;margin:18px 0}button{font:inherit;border:1px solid #ccd5c8;border-radius:9px;padding:10px 15px;background:white;color:#243b31;cursor:pointer}button.primary{background:#245c46;color:white}button:disabled{opacity:.45;cursor:default}.actions{display:flex;flex-wrap:wrap;gap:10px}.screen{aspect-ratio:16/9;background:#18231e;border-radius:10px;overflow:hidden;margin:18px 0}.screen iframe{width:100%;height:100%;border:0}#status{font-weight:600;min-height:54px}.row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:16px 0;border-top:1px solid #e6e9e2}.row:first-child{border-top:0}.row strong{display:block}.result{display:block;font-size:14px;color:#667367}.pass{color:#20633d}.fail{color:#a53431}.running{color:#8c640b}progress{width:100%;accent-color:#245c46}summary{cursor:pointer}small{font-size:13px}@media(max-width:520px){.panel{padding:15px}.row{grid-template-columns:1fr}.row button{justify-self:start}}
+</style>
+<main>
+<a href="./">← Italiano Replay</a>
+<h1>새 수업 후보 영상 재생 확인</h1>
+<p>사이트 안에서 영상이 실제로 움직이는지 확인합니다. <b>아직 새 수업으로 확정된 영상은 아닙니다.</b> 검사 중에는 이 화면을 열어 두세요.</p>
+<div class="panel">
+<div class="actions"><button id="start" class="primary" disabled>20개 순서대로 검사</button><button id="stop" disabled>중지</button><button id="download" disabled>결과 저장</button></div>
+<p id="status" role="status" aria-live="polite">YouTube 플레이어를 준비하고 있습니다.</p>
+<progress id="progress" max="20" value="0" aria-label="검사한 영상 수"></progress>
+<div class="screen"><div id="player"></div></div>
+<p class="muted"><small>자동 검사는 음소거 상태로 진행합니다. 정상 재생은 재생 상태와 2초 이상의 실제 시간 진행을 함께 확인한 경우에만 표시합니다. 로딩 지연·자동재생 제한은 외부 재생 차단과 구분합니다.</small></p>
+</div>
+<div class="panel"><h2>후보 20개</h2><div id="list"></div></div>
+<details class="panel"><summary>결과 읽는 방법</summary><p>‘재생 확인’은 지금 사용 중인 기기·지역에서의 검사 결과입니다. ‘외부 재생 차단’은 YouTube 오류 101·150, ‘삭제·비공개 등’은 오류 100에 해당합니다. ‘확인 불가’는 로딩이나 자동재생 문제일 수 있으므로 차단으로 단정하지 않습니다.</p><p>문장·번역·구간 정확도는 별도의 검토가 필요합니다. 이 페이지는 영상 재생 여부만 검사합니다. 결과 저장은 이 기기에 JSON 파일을 내려받으며, GitHub나 다른 서버로 전송하지 않습니다.</p></details>
+</main>
+<script>
+'use strict';
+const candidates = [{"order": 15, "level": "A2", "topic": "새 친구와 대화 시작하기", "channel": "Easy Italian", "videoId": "CGs8Miv_ADI"}, {"order": 16, "level": "A2", "topic": "주말 목적지 추천 묻기", "channel": "Easy Italian", "videoId": "rRJJYlWGzjI"}, {"order": 17, "level": "A2", "topic": "동료와 점심 메뉴 정하기", "channel": "Easy Italian", "videoId": "-25XLf5S1f4"}, {"order": 18, "level": "A2", "topic": "커피 취향과 습관 말하기", "channel": "Easy Italian", "videoId": "Uraks4AAYyU"}, {"order": 19, "level": "A2", "topic": "책과 아이스크림을 곁들인 하루", "channel": "Learn Italian with Lucrezia", "videoId": "_FVL9LUq7-M"}, {"order": 20, "level": "A2", "topic": "현지인에게 관광정보 묻기", "channel": "Easy Italian", "videoId": "7JBs2wPV2eE"}, {"order": 21, "level": "B1", "topic": "어릴 때 먹던 음식 이야기", "channel": "Easy Italian", "videoId": "4rHIWxeGVk8"}, {"order": 22, "level": "B1", "topic": "이탈리아에서 집 구하기", "channel": "Learn Italian with Teacher Stefano", "videoId": "BRt575_a1cw"}, {"order": 23, "level": "B1", "topic": "운동 습관을 다시 만들기", "channel": "Impara l'Italiano con Italiano Automatico", "videoId": "Jy2H_SKJ8fM"}, {"order": 24, "level": "B1", "topic": "꼭 가 볼 곳 추천하기", "channel": "Easy Italian", "videoId": "hfYubttHxfM"}, {"order": 25, "level": "B1", "topic": "외국어로 말할 때의 긴장", "channel": "Easy Italian", "videoId": "jsBqhEuUh_E"}, {"order": 26, "level": "B1", "topic": "나를 행복하게 하는 것", "channel": "Easy Italian", "videoId": "1D1QvZYVIkU"}, {"order": 27, "level": "B1", "topic": "가족 문화와 고정관념", "channel": "Easy Italian", "videoId": "PHFz1vjzHKY"}, {"order": 28, "level": "B1", "topic": "이탈리아 생활의 장단점", "channel": "Joy of Languages. Italian", "videoId": "9CUhRaLVRZc"}, {"order": 29, "level": "B2", "topic": "이탈리아와 해외 생활 비교", "channel": "Podcast Italiano", "videoId": "rGPVdKHixKs"}, {"order": 30, "level": "B2", "topic": "꿈과 뇌에 관한 쉬운 과학", "channel": "Geopop", "videoId": "ddHHHndH-6c"}, {"order": 31, "level": "B2", "topic": "이탈리아 특유의 말투", "channel": "Vaporetto Italiano Podcast", "videoId": "ba2dXdDAZ2s"}, {"order": 32, "level": "B2", "topic": "돌체 비타는 현실일까", "channel": "Easy Italian", "videoId": "mot9re6CUrs"}, {"order": 33, "level": "B2", "topic": "이탈리아인의 웃음과 유머", "channel": "Easy Italian", "videoId": "zfJp3Z6j4r8"}, {"order": 34, "level": "B2", "topic": "우리는 왜 잠을 잘까", "channel": "Entropy for Life - Giacomo Moro Mauretto", "videoId": "sZG3Fo1yMI4"}];
+const $=id=>document.getElementById(id);
+const results=new Map();
+let player=null, running=false, aborted=false, active=null, timer=null, sdkReady=false, sdkFailed=false;
+const errorLabels={2:'영상 주소 오류',5:'플레이어 오류',100:'삭제·비공개 등으로 재생 불가',101:'외부 재생 차단',150:'외부 재생 차단',153:'플레이어 출처 확인 실패'};
+function render(){
+  $('list').replaceChildren();
+  for(const c of candidates){
+    const row=document.createElement('div');row.className='row';
+    const info=document.createElement('div');
+    const title=document.createElement('strong');title.textContent=`${c.order} · ${c.level} · ${c.topic}`;
+    const source=document.createElement('a');source.href=`https://www.youtube.com/watch?v=${c.videoId}`;source.target='_blank';source.rel='noopener noreferrer';source.textContent=c.channel;
+    const state=document.createElement('span');const r=results.get(c.videoId);state.className='result '+(r?.status==='passed'?'pass':r?.status==='blocked'?'fail':'');state.textContent=r?.label||'미검사';
+    const btn=document.createElement('button');btn.textContent='이 영상 검사';btn.disabled=running||!sdkReady;btn.onclick=()=>run([c]);
+    info.append(title,source,state);row.append(info,btn);$('list').append(row);
+  }
+  $('progress').value=results.size;
+  $('download').disabled=results.size===0;
+}
+function cleanup(){clearInterval(timer);timer=null;if(player){try{player.destroy()}catch(_){}player=null}active=null;const slot=document.createElement('div');slot.id='player';document.querySelector('.screen').replaceChildren(slot)}
+function testVideo(c){
+  return new Promise(resolve=>{
+    cleanup();let done=false, prev=null, progressed=0, playing=false, wasPlaying=false, autoplayBlocked=false;const started=Date.now();
+    const finish=(status,label,extra={})=>{
+      if(done)return;done=true;clearInterval(timer);timer=null;
+      const result={videoId:c.videoId,status,label,checkedAt:new Date().toISOString(),observedProgressSeconds:Number(progressed.toFixed(3)),observedPlayingState:wasPlaying,...extra};
+      if(status!=='cancelled')results.set(c.videoId,result);
+      active=null;resolve(result);
+    };
+    active={cancel:()=>finish('cancelled','검사 중지')};
+    $('status').textContent=`검사 중: ${c.order} · ${c.topic}`;
+    try{
+      player=new YT.Player('player',{videoId:c.videoId,host:'https://www.youtube.com',playerVars:{autoplay:1,mute:1,playsinline:1,controls:1,origin:location.origin},events:{
+        onReady:e=>{if(done)return;e.target.mute();e.target.playVideo()},
+        onStateChange:e=>{if(done)return;playing=e.data===YT.PlayerState.PLAYING;if(playing)wasPlaying=true;else prev=null},
+        onAutoplayBlocked:()=>{autoplayBlocked=true;$('status').textContent=`${c.topic}: 플레이어의 ▶ 버튼을 눌러 주세요.`},
+        onError:e=>{const code=Number(e.data);finish(code===101||code===150?'blocked':'unconfirmed',errorLabels[code]||`YouTube 오류 ${code}`,{errorCode:code})}
+      }});
+      timer=setInterval(()=>{
+        if(done)return;
+        if(aborted){finish('cancelled','검사 중지');return}
+        let t=0;try{t=player.getCurrentTime()}catch(_){}
+        if(playing&&Number.isFinite(t)){
+          if(prev!==null){const delta=t-prev;if(delta>0&&delta<1.5)progressed+=delta}
+          prev=t;
+        }
+        if(wasPlaying&&progressed>=2){finish('passed','재생 확인',{lastObservedTime:t});return}
+        if(Date.now()-started>22000)finish('unconfirmed',autoplayBlocked?'자동재생 제한 · 수동 재검사 필요':'시간 진행 확인 불가',{lastObservedTime:t,autoplayBlocked});
+      },250);
+    }catch(err){finish('unconfirmed','플레이어를 시작하지 못함')}
+  });
+}
+async function run(queue){
+  if(running||!sdkReady)return;running=true;aborted=false;$('start').disabled=true;$('stop').disabled=false;render();
+  let tested=0;
+  try{for(const c of queue){if(aborted)break;await testVideo(c);tested++;render()}}
+  finally{cleanup();running=false;$('stop').disabled=true;$('start').disabled=!sdkReady;render();
+    const all=[...results.values()];const passed=all.filter(r=>r.status==='passed').length;const blocked=all.filter(r=>r.status==='blocked').length;
+    $('status').textContent=`${aborted?'검사를 중지했습니다.':'검사가 끝났습니다.'} 재생 확인 ${passed}개 · 외부 재생 차단 ${blocked}개 · 확인 불가 ${all.length-passed-blocked}개. 결과 저장을 눌러 주세요.`;
+  }
+}
+$('start').onclick=()=>run(candidates);
+$('stop').onclick=()=>{aborted=true;active?.cancel()};
+$('download').onclick=()=>{
+  const payload={schemaVersion:1,createdAt:new Date().toISOString(),origin:location.origin,scope:'external_embed_playback_only',successCriterion:'PLAYING state and at least 2 seconds of bounded incremental media time',candidates:candidates.map(c=>({...c,result:results.get(c.videoId)||{status:'not_tested'}}))};
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const href=URL.createObjectURL(blob);const a=document.createElement('a');a.href=href;a.download='italiano-replay-playback-results.json';a.click();setTimeout(()=>URL.revokeObjectURL(href),2000);
+};
+window.onYouTubeIframeAPIReady=()=>{if(sdkFailed)return;sdkReady=true;$('start').disabled=false;$('status').textContent='준비됐습니다. 순서대로 검사하거나, 원하는 영상을 하나씩 검사하세요.';render()};
+function failSDK(){if(sdkReady)return;sdkFailed=true;$('status').textContent='YouTube 플레이어를 불러오지 못했습니다. 네트워크나 콘텐츠 차단 설정을 확인한 뒤 새로고침하세요.'}
+render();const script=document.createElement('script');script.src='https://www.youtube.com/iframe_api';script.onerror=failSDK;document.head.append(script);setTimeout(failSDK,20000);
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&running){aborted=true;active?.cancel()}});
+</script>
+</html>
